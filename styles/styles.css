@@ -46,17 +46,18 @@ header>.container>div{
   justify-content: space-between;
 }
 
-.news-title{
-   color: #ff0e00;
-   font-size: 1.5em;
-   font-weight: bold;
-   margin-bottom: 5px;
-   margin-top: 45px;
-   text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
- }
+.title{
+  color: #ff0e00;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 45px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
 
 .news-item{
   /*border-top: 1px solid #000000;*/
+  margin-bottom: 15px;
   width: 346px;
 }
 
@@ -108,6 +109,7 @@ header>.container>div{
   text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
   width: 150px;
 }
+
 .btn a:hover, .btn a:focus{
   background-color: #b30800;
   background-image: -webkit-linear-gradient(to bottom, #b30800, #ff0e00);
@@ -121,13 +123,23 @@ header>.container>div{
 /*------ offers ------*/
 .offers{
   background-color: #28313a;
+  padding-top: 45px;
+}
+.offers .title{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
 }
 
 .offer{
   display: inline-block;
   height: 127px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 30px;
   width: 250px;
 }
 
@@ -155,6 +167,13 @@ header>.container>div{
   background: url('../images/offers-item-3.jpg') 100% 100% no-repeat;
   background-size: cover;
 }
+
+ul li.helper {
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  padding-bottom: 50px;
+}
 /*------ end offers ------*/
 
 /*------ footer ------*/
@@ -167,14 +186,24 @@ footer{
 
 footer h4{
   color: #ffb400;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
+  margin: 0 0 10px 0;
   text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
 }
 
-footer p{
+.contacts{
+  float: left;
+  width: 250px;
+}
+
+.feedback {
+  float: right;
+}
+
+.contacts p{
   color: #ffffff;
-  font-size: 1.17em;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -185,14 +214,17 @@ footer form{
 }
 
 footer input{
+  border: none;
   height: 40px;
   margin-bottom: 10px;
   width: 100%;
 }
 
 footer textarea{
+  border: none;
   font-family: Arial;
   height: 65px;
+  padding: 0;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -203,17 +235,17 @@ form .send-message{
   background-image: -o-linear-gradient(to top, #b30800, #ff0e00);
   background-image: -ms-linear-gradient(to top, #b30800, #ff0e00);
   background-image: linear-gradient(to top, #b30800, #ff0e00);
-  border: none;
   color: #ffffff;
   display: block;
   font-size: 1.5em;
   font-weight: bold;
-  height: 35px;
-  line-height: 35px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
   width: 220px;
 }
+
 form .send-message:hover, .send-message:focus{
   background-color: #b30800;
   background-image: -webkit-linear-gradient(to bottom, #b30800, #ff0e00);
